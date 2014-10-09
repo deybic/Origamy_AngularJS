@@ -1,0 +1,78 @@
+<!doctype html>
+<html ng-app="origamy">
+  <head>
+    <title> Ejemplo de Filtros de AngularJS - Origamy</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.17/angular.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+  </head>
+  <body>
+      <div class="wrapper" ng-controller="OrigamyCtrl">
+          
+          <div class="container">
+            <div class="row">
+              
+              <h1>Ejemplo de Filtros de Angularjs - Origamy Academy</h1>
+              <hr>
+              <h3>Primer Ejemplo: Filtrar un <b>ng-repeat</b> mediante un campo de texto </h3>
+              
+              <div class="students">
+                
+                <ul class="studentsList">
+
+                <input type="text" ng-model="searchArg" class="floatlabel form-control" placeholder="Filtrar estudiantes ...">
+                  <li ng-repeat="student in students | filter:searchArg ">
+                    
+                    <h2> Nombre: {{student.name}} </h2>
+                    <h4> <b>Cedula:</b> {{student.id}} </h4>
+                    <h4> <b>Escuela:</b> {{student.school}} </h4>
+                    <h4> <b>Direccion:</b> {{student.address}} </h4>
+                  </li>
+                </ul>
+
+              </div>
+              
+              <hr>
+
+              <h3>Segundo Ejemplo: Filtrar un <b>ng-repeat</b> mediante varios argumentos </h3>
+              
+              <div class="students">
+                
+                <ul class="studentsList">
+
+                <input type="text" ng-model="search.name" class="floatlabel form-control" placeholder="Filtrar estudiantes por Nombre ">
+                <input type="text" ng-model="search.id" class="floatlabel form-control" placeholder="Filtrar estudiantes por Cedula ">
+                <input type="text" ng-model="search.school" class="floatlabel form-control" placeholder="Filtrar estudiantes por Escuela ">
+                <input type="text" ng-model="search.address" class="floatlabel form-control" placeholder="Filtrar estudiantes por Direccion ">
+
+                  <li ng-repeat="student in students | filter:search">
+                    
+                    <h2> Nombre: {{student.name}} </h2>
+                    <h4> <b>Cedula:</b> {{student.id}} </h4>
+                    <h4> <b>Escuela:</b> {{student.school}} </h4>
+                    <h4> <b>Direccion:</b> {{student.address}} </h4>
+                  </li>
+                </ul>
+                
+              </div>
+
+
+
+            </div>
+          </div>
+          
+      
+      <script type="text/javascript" src="https://www.clubdesign.at/jquery.js"></script>
+      <script type="text/javascript" src="https://www.clubdesign.at/floatlabels.js"></script>
+      <script>
+          $(document).ready(function () {
+            $('.floatlabel').floatlabel();
+        });
+      </script>
+
+
+      </div>
+  </body>
+</html>
