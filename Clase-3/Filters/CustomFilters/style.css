@@ -1,0 +1,31 @@
+/**Float label magic from me Kevin. Rad! */
+
+input {
+    border: 1px solid #DDDDDD !important;
+    padding: 10px !important;
+    margin: 15px 0 !important;
+    height: 55px !important;
+}
+label.label-floatlabel {
+    font-weight: bold;
+    font-size: 11px;
+    top: 4px !important;
+}
+
+.studentsList {
+	text-align: center;
+}
+
+.studentsList li{
+	display: inline-block;
+	width: 250px;
+	margin-right: 10px;
+	border: 1px solid rgb(212, 212, 212);
+	padding: 15px;
+	border-radius: 4px;
+	background: rgb(249, 249, 249);
+}
+
+.students{
+	margin-bottom: 30px;
+}

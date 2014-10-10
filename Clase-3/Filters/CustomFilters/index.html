@@ -1,0 +1,41 @@
+<!doctype html>
+<html ng-app="origamy">
+  <head>
+    <title> Ejemplo de Filtros de Propios - Origamy</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.17/angular.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+  </head>
+  <body>
+      <div class="wrapper" ng-controller="OrigamyCtrl">
+          
+          <div class="container">
+            <div class="row">
+              
+              <h1>Ejemplo de Filtros de Angularjs - Origamy Academy</h1>
+              <hr>
+              <h3>Primer Ejemplo: Filtro para crear hacer texto en mayuscula </h3>
+
+              <input type="text" ng-model="texto" class="floatlabel form-control" placeholder="Escribe algun texto en minuscula">
+
+              <h4> {{texto | hacerMayusculo }}</h4>
+           
+
+            </div>
+          </div>
+          
+      
+      <script type="text/javascript" src="https://www.clubdesign.at/jquery.js"></script>
+      <script type="text/javascript" src="https://www.clubdesign.at/floatlabels.js"></script>
+      <script>
+          $(document).ready(function () {
+            $('.floatlabel').floatlabel();
+        });
+      </script>
+
+
+      </div>
+  </body>
+</html>

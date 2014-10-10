@@ -33,5 +33,7 @@ app.controller('OrigamyCtrl', ['$scope', function($scope){
             "address"   : "San Isidro de Coronado"
         }
     ];
+
+    $scope.date = 1400956671914;
     
 }]);
