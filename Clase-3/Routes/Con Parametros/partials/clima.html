@@ -1,0 +1,9 @@
+<div class="jumbotron text-center">
+	<h1>Forecast</h1>
+	
+	<p>{{ message }}</p>
+
+	<p ng-show="loading"><i class="fa fa-spinner fa-spin"></i></p>
+
+	<pre style="text-align:left"> {{clima | json}}</pre>
+</div>

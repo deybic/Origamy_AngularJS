@@ -10,12 +10,12 @@
 				controller  : 'mainController'
 			})
 
-			.when('/about', {
+			.when('/origami', {
 				templateUrl : 'partials/origami.html',
 				controller  : 'origamiController'
 			})
 
-			.when('/contact', {
+			.when('/contacto', {
 				templateUrl : 'partials/contacto.html',
 				controller  : 'contactoController'
 			});
