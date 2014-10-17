@@ -1,0 +1,51 @@
+
+body{
+	margin: 50px; 
+	background-color: whitesmoke; 
+	color: rgb(89, 89, 89);; 
+	overflow: hidden;
+}
+
+ul{
+	padding: 0;
+}
+
+li{
+	list-style: none; 
+	font-size: 16px;
+	margin: 7px 0;
+}
+
+input[type="text"]{
+	min-width: 400px;
+	padding: 8px 13px;
+	border: 1px solid rgb(228, 228, 228);
+	border-radius: 8px;
+	background: white;
+}
+
+/* AQUI SUCEDE LA ANIMACION A TRAVES DE LAS CLASES QUE AGREGA ANGULAR */
+li.ng-move,
+li.ng-enter,
+li.ng-leave {
+  -webkit-transition:all linear 0.5s;
+  transition:all linear 0.5s;
+}
+ 
+li.ng-leave.ng-leave-active,
+li.ng-move,
+li.ng-enter {
+  opacity:0;
+  max-height:0;
+}
+ 
+li.ng-leave,
+li.ng-move.ng-move-active,
+li.ng-enter.ng-enter-active {
+  opacity:1;
+  max-height:20px;
+}
+
+
+
+

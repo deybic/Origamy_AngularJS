@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejemplo Basico Animaciones</title>
+  <link href="animations.css" rel="stylesheet" type="text/css">
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular-animate.js"></script>
+  
+
+  
+</head>
+<body ng-app="ngAnimate">
+
+    <h1>Animacion Basica en Angular.js - Origami</h1>
+
+    <hr>
+
+    <div ng-init="checked=true">
+    <label>
+      <input type="checkbox" ng-model="checked" class="check"> Soy visible ??.
+    </label>
+    <div class="origamy-sample" ng-show="checked" style="clear:both;">
+      Visible ...
+    </div>
+  </div>
+
+  
+</body>
+</html>

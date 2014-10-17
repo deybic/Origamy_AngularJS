@@ -1,0 +1,23 @@
+  .origamy-sample {
+    padding:10px;
+    border: 1px solid rgb(228, 228, 228);
+    border-radius: 8px;
+    background:rgb(232, 231, 231);
+    margin-top: 14px;
+    font-size: 20px;
+  }
+
+/* ESTA SEPARADO PARA QUE OBSERVEN LA CONFIGURACION DE LA ANIMACION */
+  .origamy-sample {
+    -webkit-transition:all linear 0.5s;
+    transition:all linear 0.5s;
+  }
+
+  .origamy-sample.ng-hide {
+    opacity:0;
+  }
+
+  .check{
+    float:left; 
+    margin-right:10px;
+  }
